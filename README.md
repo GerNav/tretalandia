@@ -1,2 +1,1 @@
-# wrap_eh_panqueca
-breja é muito bom
+# Entre, crie sua treta, e mande seu PR
