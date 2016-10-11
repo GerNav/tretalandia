@@ -1,0 +1,322 @@
+/* Reset */
+
+h1,
+h2
+h3,
+p {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*nav*/
+
+nav {
+  height: 10vh;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0,0,50,0.8);
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  width: 25%;
+  height: 10vh;
+  text-align: center;
+  display: flex;
+}
+
+nav a {
+  color: #fff;
+  display: block;
+  margin: auto;
+}
+
+nav span {
+  display: block;
+}
+
+nav.fa {
+  font-size: 1.8rem;
+}
+nav span:not(.fa) {
+  font-size: 0.8rem;
+}
+
+/* header */
+header {
+    
+    background-image: url("../img/joker-batman-pool-cue-tryouts.gif");
+    background-image: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #000;
+    background-attachment: fixed;
+    text-align: center;
+    color: #FFF;
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content:center;
+    position: relative;
+    z-index: 2;
+}
+
+header:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+    
+}
+
+header div {
+    margin: auto;
+    min-width: 250px;
+
+}
+
+header a {
+    display: block;
+    background-color: rgba(0,0,20,0.5);
+    color: #FFF;
+    text-transform: uppercase;
+    max-width: 160px;
+    margin: auto;
+    padding: 12px 0;
+    border-radius: 4px;
+    transition: all 0.15s ease;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+header a:hover {
+    background-color: rgba(0,0,0,0.7);
+
+}
+h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: Romochka;
+    color: #B22222;
+}
+
+p {
+    font-size: 20px;
+    margin: 22px;
+
+}
+
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+    
+    p {
+        font-size: 28px;
+    }
+    
+    a {
+        font-size: 24px;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 46px;
+    }
+    
+    p {
+        font-size: 32px;
+    }
+    
+    a {
+        font-size: 27px;
+    }
+
+}
+
+/* treta */
+.treta {
+    text-align: center;
+}
+
+.treta h2 {
+    margin: 30px auto;
+    text-transform: uppercase;
+}
+
+.treta li {
+    margin: 50px auto;
+}
+
+.treta li:nth-of-type(1) div {
+  background-image: url('../tretalandia/img/download.jpg');
+}
+
+.treta li:nth-of-type(2) div {
+  background-image: url('../');
+}
+
+.treta li:nth-of-type(3) div {
+  background-image: url('..');
+}
+
+.treta div {
+    margin: auto;
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    background-position: center;
+    margin-bottom: 16px;
+    transition: all 0.3s ease;
+}
+
+.treta div:hover {
+    transform: scale(1.2);
+}
+
+@media (min-width: 768px) {
+    .treta ul {
+        display: flex;
+    }
+}
+
+.detail {
+    padding: 0 5%;
+}
+
+.detail h2{
+    text-align: center;
+    color: #222;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .detail {
+    display: flex;
+    flex-flow: row wrap;
+    }
+
+    .detail h2 {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .detail img-container {
+        width: 50%;
+    }
+
+    .detail p {
+        width: 50%;
+        margin-left: 0;
+    }
+
+.frase h2 {
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #009;
+    padding: 5vh 5vw;
+}
+
+/* colabore */
+
+.colaborate {
+  background-color: #999;
+  min-height: 90vh;
+  padding: 5vh 5vw;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+
+.colaborate h2,
+.colaborate p,
+.colaborate ul {
+  margin: auto;
+}
+
+.colaborate a {
+  color: #fff;
+  background-color: rgba(123,231,50,0.5);
+  padding: 16px;
+  display: block;
+  max-width: 240px;
+  margin: 10px auto;
+}
+
+@media (min-width: 768px) {
+  .colaborate {
+    min-height: 30vh;
+    flex-flow: row wrap;
+  }
+
+  .colaborate h2 {
+    width: 100%;
+  }
+
+  .colaborate p {
+    width: 50%;
+    max-width: 300px;
+  }
+
+  .colaborate ul {
+    width: 50%;
+  }
+
+
+}
+
+/* footer */
+footer {
+  min-height: 10vh;
+  background-color: #fff;
+  display: flex;
+  padding-bottom: 15vh;
+}
+
+footer ul {
+  display: flex;
+  flex-flow: row;
+  margin: auto;
+  width: 100%;
+}
+
+footer a {
+  padding: 10px;
+  font-size: 30px;
+}
+
+footer li {
+  margin: auto;
+}
